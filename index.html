@@ -1,83 +1,232 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Portifólio Gabriel Rocha</title>
-</head>
-<body>
-    <div class="main"> 
-            <nav>
-                <h2 class="portifolio" id="principal" >Portifó<span>lio</span></h2>
-                <ul>
-                    <li><a class="linkMenu" href="#sobreMim">Sobre</a></li>
-                    <li><a class="linkMenu" href="#Meusprojetos">Projetos</a></li>
-                    <li><a class="linkMenu" href="#fale-comigo">Fale comigo</a></li>
-                </ul>
-            </nav>  
+  </head>
+  <body>
+    <!--Cabeçalho -->
+    <header>
+      <div id="title">
+        <h1>Gabriel Rocha</h1>
+        <p>Full-stack Developer</p>
+      </div>
 
-        <div class="myName" >
-            <h1>Gabriel <span>Rocha</span></h1>
-            <h3>Desenvolvedor Front End</h3>
-            <img src="/Imgs/pngwing.com.png" >
-        </div>  
-        
-    </div>
-  
+      <div id="nav-links">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">About</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Talk to me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-    <section id="sobreMim">
-        <img class="myImg" src="Imgs/WhatsApp Image 2024-02-19 at 11.39.55.jpeg">
-        <div>
-            <h2>Sobre mim</h2>
-            <p>Estudo o front-end cerca de 2 anos, especializado em HTML, CSS, JavaScript. <br>Com foco na usabilidade e estética do design, crio aplicações web dinâmicas e responsivas. Estou sempre <br> buscando aprimorar minhas habilidades e explorar novas tecnologias para oferecer soluções <br> inovadoras aos usuários.</p>
-        </div>
-            
+    <!-- Principal -->
+    <section id="about-me">
+      <div id="text-about-me">
+        <h1>
+          JavaScript | React | Bootstrap | Node.js | MySQL | MongoDB Bachelor’s
+          in Information Systems
+        </h1>
+        <br />
+        <p>
+          Information Systems student at UFERSA – Angicos/RN, with experience in
+          full stack web development, working on both front-end and back-end. On
+          the front-end, I use technologies like React, JavaScript, HTML, CSS,
+          and Bootstrap to build modern, responsive, and user-friendly
+          interfaces. On the back-end, I develop applications with Node.js,
+          creating efficient and scalable REST APIs. I have experience with both
+          SQL and NoSQL databases, including PostgreSQL and MongoDB, ensuring
+          solid data management and system integration. I’m always looking to
+          improve my skills, keeping up with industry trends and applying best
+          development practices to deliver high-quality, optimized solutions.
+        </p>
+      </div>
+
+      <div id="img-me">
+        <img src="Imgs/WhatsApp Image 2024-07-01 at 20.28.27.jpg" alt="" />
+      </div>
     </section>
 
-    <div class="projetos" id="Meusprojetos">
-        <h2>Principais Projetos</h2>
+    <section id="projects">
+      <div id="my-projects">
+        <div class="container py-5">
+          <h2 class="text-center mb-5">My Projects</h2>
 
-        <div class="card-projetos">
-            <div class="card">
-                <img src="/Imgs/dinheiro.png">
-                <h5>Controle de Despesas</h5>
-                <p>Site simples de controle de despesas simples com JavaScript puro</p>
-                <a href="https://zippy-bombolone-2e792d.netlify.app/" target="_blank">Ver projeto</a>
+          <div id="projectCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#projectCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#projectCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#projectCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
-    
-            <div class="card">
-                <img src="/Imgs/hamburguer.png">
-                <h5>Lading page</h5>
-                <p>Uma lading page simples e responsiva de um site para pedidos de lanches</p>
-                <a href="https://lively-malabi-4529d6.netlify.app/" target="_blank">Ver projeto</a>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img
+                    src="Imgs/user_660319.png"
+                    class="card-img-top"
+                    alt="Imagem do Projeto 1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sistema de gerenciamento de alunos de uma academia
+                    </h5>
+                    <p class="card-text">
+                      Desenvolvimento de um sistema de gestão para academias,
+                      com funcionalidades como cadastro de alunos, controle de
+                      pagamentos, envio de notificações por e-mail/WhatsApp,
+                      geração de relatórios e integração com o Mercado Pago. O
+                      sistema automatiza processos e auxilia na organização
+                      financeira e administrativa da academia.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ver no GitHub</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <img
+                    src="Imgs/fingerprint-scan_6096315.png"
+                    class="card-img-top"
+                    alt="Imagem do Projeto 2"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Ponto eletrônico</h5>
+                    <p class="card-text">
+                      Uma breve descrição sobre este projeto, as tecnologias
+                      usadas e o que ele resolve. Mantenha o texto conciso.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ver no GitHub</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card">
+                  <img
+                    src="Imgs/dinheiro.png"
+                    class="card-img-top"
+                    alt="Imagem do Projeto 3"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Controle de despesas</h5>
+                    <p class="card-text">
+                      um sistema simples de controle de finanças na web
+                      responsivo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ver no GitHub</a>
+                  </div>
+                </div>
+              </div>
             </div>
-    
-            <div class="card">
-                <img src="/Imgs/nuvem (1).png">
-                <h5>Previsão do tempo</h5>
-                <p>Site simples de previsão do tempo com uso de uma API</p>
-                <a  href="https://previtempo.netlify.app/" target="_blank">Ver projeto</a>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Rodapé -->
+<footer id="footer">
+    <div class="container">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/gabriel-rocha-40a039265/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/GabrielRochaCab" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://wa.me/5584996331302" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="current-year"></span> Gabriel Rocha. Todos os direitos reservados.
         </div>
     </div>
-        
-        <footer id="fale-comigo">
-            <h5>Gabriel Rocha</h5>
-            <p>Para mais informações</p>
+</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
 
-            <div class="social">
-                <a href="tel:+5584996331302" target="_blank">
-                    <img src="Imgs/whatsapp.png">
-                </a>
-
-                <a href="https://www.linkedin.com/in/gabriel-rocha-40a039265/" target="_blank">
-                    <img src="Imgs/linkedin.png">
-                </a>
-            </div>
-        </footer>
-      
-</body>
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
